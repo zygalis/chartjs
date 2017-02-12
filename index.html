@@ -1,0 +1,328 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form class="form-horizontal">   
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <h1>Ohjelmoijakysely</h1>
+                            <h3>Yleistiedot</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="ika">Ikä</label>  
+                                    <div class="col-xs-3">
+                                        <input id="ika" name="ika" type="number" class="form-control input-sm" min='1' max="65">  
+                                        <span class="help-block">Arvoalue: 15-65</span>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label">Sukupuoli</label>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label for="mies">
+                                                <input type="radio" name="sukupuoli" id="mies" value="1" checked="checked">
+                                                Mies
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="nainen">
+                                                <input type="radio" name="sukupuoli" id="nainen" value="2">
+                                                Nainen
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-4 control-label" for="kvuosi">Kokemus vuosina</label>  
+                                    <div class="col-xs-3">
+                                        <input id="kvuosi" name="kvuosi" type="number" class="form-control input-sm" min='0' max="50">  
+                                        <span class="help-block">Arvoalue: 0-50</span>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="images/moth.png">
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-6">
+                            <h3>Arvioi ohjelmointiosaamistasi</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group row col-md-12">
+                                <label class="col-md-3 control-label">Ohjelmointi yleisellä tasolla</label>
+                                <div class="col-md-6">
+                                    <div class="radio">
+                                        <label for="ehyva_oyt">
+                                            <input type="radio" name="oyt" id="ehyva_oyt" value="5" checked="checked">
+                                            Erittäin hyvä
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="hyva_oyt">
+                                            <input type="radio" name="oyt" id="hyva_oyt" value="4">
+                                            Hyvä
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="tyydyttava_oyt">
+                                            <input type="radio" name="oyt" id="tyydyttava_oyt" value="3">
+                                            Tyydyttävä
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="valttava_oyt">
+                                            <input type="radio" name="oyt" id="valttava_oyt" value="2">
+                                            Välttävä
+                                        </label>
+                                    </div>
+                                    <div class="radio">
+                                        <label for="heikko_oyt">
+                                            <input type="radio" name="oyt" id="heikko_oyt" value="1">
+                                            Heikko
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row col-md-12">
+                                <label class="col-md-3 control-label">Web frontend</label>
+                                    <div class="col-md-6">
+                                        <div class="radio">
+                                            <label for="ehyva_f">
+                                                <input type="radio" name="webf" id="ehyva_f" value="5" checked="checked">
+                                                Erittäin hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="hyva_f">
+                                                <input type="radio" name="webf" id="hyva_f" value="4">
+                                                Hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="tyydyttava_f">
+                                                <input type="radio" name="webf" id="tyydyttava_f" value="3">
+                                                Tyydyttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="valttava_f">
+                                                <input type="radio" name="webf" id="valttava_f" value="2">
+                                                Välttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="heikko_f">
+                                                <input type="radio" name="webf" id="heikko_f" value="1">
+                                                Heikko
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group row col-md-12">
+                                <label class="col-md-3 control-label" for="webb">Web backend</label>
+                                    <div class="col-md-6">
+                                        <div class="radio">
+                                            <label for="ehyva_b">
+                                                <input type="radio" name="webb" id="ehyva_b" value="5" checked="checked">
+                                                Erittäin hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="hyva_b">
+                                                <input type="radio" name="webb" id="hyva_b" value="4">
+                                                Hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="tyydyttava_b">
+                                                <input type="radio" name="webb" id="tyydyttava_b" value="3">
+                                                Tyydyttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="valttava_b">
+                                                <input type="radio" name="webb" id="valttava_b" value="2">
+                                                Välttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="heikko_b">
+                                                <input type="radio" name="webb" id="heikko_b" value="1">
+                                                Heikko
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group row col-md-12">
+                                <label class="col-md-3 control-label" for="nmob">Natiivi mobiili</label>
+                                    <div class="col-md-6">
+                                        <div class="radio">
+                                            <label for="ehyva">
+                                                <input type="radio" name="nmob" id="ehyva" value="5" checked="checked">
+                                                Erittäin hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="hyva">
+                                                <input type="radio" name="nmob" id="hyva" value="4">
+                                                Hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="tyydyttava">
+                                                <input type="radio" name="nmob" id="hyva" value="3">
+                                                Tyydyttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="valttava">
+                                                <input type="radio" name="nmob" id="hyva" value="2">
+                                                Välttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="heikko">
+                                                <input type="radio" name="nmob" id="hyva" value="1">
+                                                Heikko
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group row col-md-12">
+                                <label class="col-md-4 control-label" for="hmob">Hybridi mobiili</label>
+                                    <div class="col-md-4">
+                                        <div class="radio">
+                                            <label for="ehyva_hb">
+                                                <input type="radio" name="hmob" id="ehyva_hb" value="5" checked="checked">
+                                                Erittäin hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="hyva_hb">
+                                                <input type="radio" name="hmob" id="hyva_hb" value="4">
+                                                Hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="tyydyttava_hb">
+                                                <input type="radio" name="hmob" id="tyydyttava_hb" value="3">
+                                                Tyydyttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="valttava_hb">
+                                                <input type="radio" name="hmob" id="valttava_hb" value="2">
+                                                Välttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="heikko_hb">
+                                                <input type="radio" name="hmob" id="heikko_hb" value="1">
+                                                Heikko
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group row col-md-12">
+                                <label class="col-md-4 control-label" for="sql">Relaatiotietokannat</label>
+                                    <div class="col-md-6">
+                                        <div class="radio">
+                                            <label for="ehyva_sql">
+                                                <input type="radio" name="sql" id="ehyva_sql" value="5" checked="checked">
+                                                Erittäin hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="hyva_sql">
+                                                <input type="radio" name="sql" id="hyva_sql" value="4">
+                                                Hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="tyydyttava_sql">
+                                                <input type="radio" name="sql" id="tyydyttava_sql" value="3">
+                                                Tyydyttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="valttava_sql">
+                                                <input type="radio" name="sql" id="valttava_sql" value="2">
+                                                Välttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="heikko_sql">
+                                                <input type="radio" name="sql" id="heikko_sql" value="1">
+                                                Heikko
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group row col-md-12">
+                                <label class="col-md-4 control-label" for="nsql">NoSQL-tietokannat</label>
+                                    <div class="col-md-6">
+                                        <div class="radio">
+                                            <label for="ehyva_nsql">
+                                                <input type="radio" name="nsql" id="ehyva_nsql" value="5" checked="checked">
+                                                Erittäin hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="hyva_nsql">
+                                                <input type="radio" name="nsql" id="ehyva_nsql" value="4">
+                                                Hyvä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="tyydyttava_nqsl">
+                                                <input type="radio" name="nsql" id="tyydyttava_nqsl" value="3">
+                                                Tyydyttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="valttava_nqsl">
+                                                <input type="radio" name="nsql" id="valttava_nqsl" value="2">
+                                                Välttävä
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label for="heikko_nqsl">
+                                                <input type="radio" name="nsql" id="heikko_nqsl" value="1">
+                                                Heikko
+                                            </label>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="form-group row col-md-12">
+                                <label class='col-md-3'></label>
+                                    <div class="col-md-6"><br>
+                                        <button type="submit" id="hyvaksy" name="hyvaksy" class="btn btn-success">Hyväksy</button>
+                                        <button type="reset" id="empty" name="empty" class="btn btn-default">Tyhjennä</button>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/Chart.min.js"></script>
+    </body>
+</html>
